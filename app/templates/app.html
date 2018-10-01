@@ -5,9 +5,12 @@
  
 body{
     font-family: Lato, sans-serif;
-    text-align: center;
     color: #bbbebe;
     background-color: #1e1e1e;
+}
+
+.presenter-box {
+  text-align: center;
 }
 
 .avatar img {
@@ -22,8 +25,8 @@ body{
 }
 
 .social img {
-  width: 50px;
-  height: 50px;
+  width: 32;
+  height: 32px;
   padding-right: 10px;
 }
  
@@ -31,7 +34,7 @@ body{
  
 </head>
 <body>
-  <div class="block1">
+  <div class="content">
       <div class="presenter-box">
         <div class="avatar">
           <img src="{{url_for('static', filename='img/me.jpeg')}}" alt="" />
@@ -39,8 +42,6 @@ body{
         <p class="presenter-name">JP aka Mashuma</p>
         <div class="social">
             <a class="twitter" href="https://twitter.com/Janchotheone" rel="nofollow" target="_blank" title="Twitter" style="visibility: visible; animation-name: fadeIn;"><img src="{{url_for('static', filename='img/twitter-logo-1.png')}}"/></a>
-        </div>
-        <div class="social">
             <a class="github" href="https://github.com/mashuma" rel="nofollow" target="_blank" title="Twitter" style="visibility: visible; animation-name: fadeIn;"><img src="{{url_for('static', filename='img/github-logo-1.png')}}"/></a>
         </div>  
       </div>
